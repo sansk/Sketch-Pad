@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sketchpad</title>
+
+		<meta charset=utf-8>
+		
+		<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Sketch-Board</h1>
+		<div class="container">
+			<div class="instructions">
+				<h3>Instructions:</h3>
+				<p>Move your mouse over sketchboard to draw in the sketchboard</p>
+				<ul><h3>Variations:</h3>
+					<li><span>Draw using One color: </span>
+						<input type="checkbox" id="onmousemve" name="onmousemve" value="onmousemve"> On Mouse Move over the grid
+						<input type="checkbox" id="onclck" name="onclck" value="onclck"> On Mouse Click over the grid
+					</li>
+					<li><span>Draw using random color: </span>
+						<input type="checkbox" id="rndClrMve" name="rndClrMve" value="rndClrMve"> On Mouse Move over the grid
+						<input type="checkbox" id="rndClrclck" name="rndClrclck" value="rndClrclck"> On Mouse Click over the grid
+					</li>
+					<li><span>Incremental color change: </span>
+						<input type="checkbox" id="fadeOutEff" name="fadeOutEff" value="fadeOutEff"> Fadeout Effect on Mouse Out
+						<input type="checkbox" id="incremental" name="incremental" value="incremental"> Incremental Color on Mouse Click
+					</li>
+					<li><span>Trail: </span>
+						<input type="checkbox" id="trail" name="trail" value="trail"> Trail Effect on Mouse Move
+					</li>
+					<span class="errTxt optErr">Please Select any One Option from above</span>
+				</ul>
+				<br>
+				<input type="text" id="gridSize" placeholder="Enter your Grid Size between 1 and 128">
+				<br>
+				<span class="errTxt grdErr">Enter a Grid Size value between 1 and 128.</span>
+				<br><br>
+				<button id="gotoSketch">Goto Sketch-Board</button>
+			</div>
+			<div class="sketchboard">
+				<button id="resetSketch">Reset Sketch-Board</button>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/sketch.js"></script>
+	</body>
+</html>
