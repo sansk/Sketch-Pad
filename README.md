@@ -1,6 +1,6 @@
 # Sketch-Pad
 
-Animating and fun filled Sketch Pad developed using HTML5, CSS3 and jQuery
+Animating and fun filled [Sketch Pad](https://sansk.github.io/Sketch-Pad/) developed using HTML5, CSS3 and jQuery
 
 ### Templates/Libraries Used
 
